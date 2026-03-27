@@ -6,37 +6,53 @@
     <meta name="description" content="color scheme generator" />
     <meta name="author" content="Federico Celia" />
     <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>Color Scheme Generator</h1>
-      <p aria-hidden="true">🟣🔵🟢🟡🟠🔴</p>
-    </header>
-    <main>
-      <div>
-        <color-picker></color-picker>
-        <dropdown></dropdown>
-        <button>Get Color Scheme</button>
-      </div>
-      <div>
-        <section class="color-scheme-results" aria-label="color-scheme-results">
-          <div class="color-result"></div>
-          <div class="color-result"></div>
-          <div class="color-result"></div>
-          <div class="color-result"></div>
-          <div class="color-result"></div>
+    <div class="main-content">
+      <header>
+        <h1>Color Scheme Generator</h1>
+        <p aria-hidden="true">🟣🔵🟢🟡🟠🔴</p>
+      </header>
+      <main class="main">
+        <div>
+          <input type="color" />
+          <select>
+            <option value="monochromatic">Monochromatic</option>
+            <option value="monochrome-dark">Monochrome-Dark</option>
+            <option value="monochrome-light">Monochrome-Light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <button>Get Color Scheme</button>
+        </div>
+        <section class="colors-container">
+          <div class="color-item">
+            <div class="color">1</div>
+            <div class="name">#FF5733</div>
+          </div>
+          <div class="color-item">
+            <div class="color">2</div>
+            <div class="name">#1F77B4</div>
+          </div>
+          <div class="color-item">
+            <div class="color">3</div>
+            <div class="name">#2ECC71</div>
+          </div>
+          <div class="color-item">
+            <div class="color">4</div>
+            <div class="name">#9B59B6</div>
+          </div>
+          <div class="color-item">
+            <div class="color">5</div>
+            <div class="name">#F1C40F</div>
+          </div>
         </section>
-      </div>
-      <div>
-        <section class="color-scheme-names" aria-label="color-scheme-names">
-          <div class="color-name"></div>
-          <div class="color-name"></div>
-          <div class="color-name"></div>
-          <div class="color-name"></div>
-          <div class="color-name"></div>
-        </section>
-      </div>
-    </main>
+      </main>
+    </div>
+
     <footer class="site-footer">
       <h2 class="footer-title">Color Scheme Generator</h2>
       <p>
