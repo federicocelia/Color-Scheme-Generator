@@ -60,18 +60,20 @@ header {
   max-width: 100px;
 }
 
+/* Starting background colors, dynamically changing using the API */
+
 .color0 {
-  background-color: aquamarine;
+  background-color: #7fffd4;
 }
 .color1 {
-  background-color: rgb(59, 22, 196);
+  background-color: #3b16c4;
 }
 .color2 {
-  background-color: rgb(38, 161, 22);
+  background-color: #26a116;
 }
 .color3 {
-  background-color: rgb(238, 38, 38);
+  background-color: #ee2626;
 }
 .color4 {
-  background-color: rgb(240, 150, 59);
+  background-color: #f0963b;
 }
