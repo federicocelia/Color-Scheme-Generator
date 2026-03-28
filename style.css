@@ -71,6 +71,20 @@ footer {
   align-self: center;
 }
 
+#color-input {
+  cursor: pointer;
+}
+
+/* The internal wrapper that actually receives the hover */
+#color-input::-webkit-color-swatch-wrapper {
+  cursor: pointer;
+}
+
+/* The visible color square itself */
+#color-input::-webkit-color-swatch {
+  cursor: pointer;
+}
+
 /* =========================================================
    Form Controls
    ========================================================= */
