@@ -59,3 +59,19 @@ header {
 .social-icon {
   max-width: 100px;
 }
+
+.color1 {
+  background-color: aquamarine;
+}
+.color2 {
+  background-color: rgb(59, 22, 196);
+}
+.color3 {
+  background-color: rgb(38, 161, 22);
+}
+.color4 {
+  background-color: rgb(238, 38, 38);
+}
+.color5 {
+  background-color: rgb(240, 150, 59);
+}
