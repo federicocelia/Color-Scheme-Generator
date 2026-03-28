@@ -47,3 +47,7 @@ document.querySelector("#get-color-scheme").addEventListener("click", () => {
       });
     });
 });
+
+// Force the color input to visually match the select's height
+// offsetHeight includes padding and borders, making it reliable for form controls
+pickedColor.style.height = `${colorTheory.offsetHeight}px`;

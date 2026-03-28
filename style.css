@@ -1,8 +1,16 @@
+/* =========================================================
+   Global Reset
+   ========================================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* =========================================================
+   Document & Page Layout
+   ========================================================= */
 
 html,
 body {
@@ -16,9 +24,21 @@ body {
   width: 100%;
 }
 
-header {
+/* =========================================================
+   Header & Footer (Global)
+   ========================================================= */
+
+header,
+footer {
+  background-color: #171616;
+  color: rgb(254, 250, 245);
+  padding-block: 1rem;
   text-align: center;
 }
+
+/* =========================================================
+   Main Layout Containers
+   ========================================================= */
 
 .main-content {
   flex: 1;
@@ -33,15 +53,45 @@ header {
   width: 100%;
 }
 
-.colors-container {
+/* =========================================================
+   Input Controls Row
+   ========================================================= */
+
+.input-container {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
+  padding-block: 0.8rem;
+  width: 100%;
+}
+
+.color-wrapper {
+  align-self: center;
+}
+
+/* =========================================================
+   Form Controls
+   ========================================================= */
+
+select,
+#get-color-scheme {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* =========================================================
+   Color Scheme Display
+   ========================================================= */
+
+.colors-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   text-align: center;
-  width: clamp(300px, 80%, 1200px);
 }
 
 .color-item {
@@ -50,30 +100,62 @@ header {
   min-width: 200px;
 }
 
+/* =========================================================
+   Footer Content
+   ========================================================= */
+
 .site-footer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+.footer-title,
+.author,
 .social-icon {
-  max-width: 100px;
+  margin-bottom: 0.5rem;
 }
 
-/* Starting background colors, dynamically changing using the API */
+.social-icon {
+  fill: rgb(254, 250, 245);
+  max-width: 50px;
+}
+
+.author a {
+  color: rgb(254, 250, 245);
+}
+
+.author a:hover,
+.author a:visited,
+.author a:focus,
+.author a:active {
+  color: rgb(231, 205, 76);
+}
+
+.social-icon:hover {
+  fill: rgb(231, 205, 76);
+}
+
+/* =========================================================
+   Initial Color Blocks (API-driven)
+   ========================================================= */
 
 .color0 {
   background-color: #7fffd4;
 }
+
 .color1 {
   background-color: #3b16c4;
 }
+
 .color2 {
   background-color: #26a116;
 }
+
 .color3 {
   background-color: #ee2626;
 }
+
 .color4 {
   background-color: #f0963b;
 }
