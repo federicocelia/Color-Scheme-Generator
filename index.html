@@ -7,6 +7,7 @@
     <meta name="author" content="Federico Celia" />
     <title>Color Scheme Generator</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div class="main-content">
@@ -16,38 +17,39 @@
       </header>
       <main class="main">
         <div>
-          <input type="color" />
+          <input id="color-input" type="color" />
           <select>
-            <option value="monochromatic">Monochromatic</option>
+            <option value="monochrome">Monochromatic</option>
             <option value="monochrome-dark">Monochrome-Dark</option>
             <option value="monochrome-light">Monochrome-Light</option>
             <option value="analogic">Analogic</option>
             <option value="complement">Complement</option>
             <option value="analogic-complement">Analogic-complement</option>
             <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
           </select>
-          <button>Get Color Scheme</button>
+          <button id="get-color-scheme">Get Color Scheme</button>
         </div>
         <section class="colors-container">
           <div class="color-item">
-            <div class="color1">1</div>
-            <div class="name">#FF5733</div>
+            <div class="color0">1</div>
+            <div class="name0">#FF5733</div>
           </div>
           <div class="color-item">
-            <div class="color2">2</div>
-            <div class="name">#1F77B4</div>
+            <div class="color1">2</div>
+            <div class="name1">#1F77B4</div>
           </div>
           <div class="color-item">
-            <div class="color3">3</div>
-            <div class="name">#2ECC71</div>
+            <div class="color2">3</div>
+            <div class="name2">#2ECC71</div>
           </div>
           <div class="color-item">
-            <div class="color4">4</div>
-            <div class="name">#9B59B6</div>
+            <div class="color3">4</div>
+            <div class="name3">#9B59B6</div>
           </div>
           <div class="color-item">
-            <div class="color5">5</div>
-            <div class="name">#F1C40F</div>
+            <div class="color4">5</div>
+            <div class="name4">#F1C40F</div>
           </div>
         </section>
       </main>
